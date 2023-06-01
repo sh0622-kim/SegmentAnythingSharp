@@ -2,7 +2,7 @@
 using Microsoft.ML.OnnxRuntime.Tensors;
 using OpenCvSharp;
 
-namespace ConsoleApp1
+namespace SegmentAnythingSharp
 {
     public class SamRunner
     {

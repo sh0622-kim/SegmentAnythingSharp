@@ -1,5 +1,5 @@
-﻿using ConsoleApp1;
-using OpenCvSharp;
+﻿using OpenCvSharp;
+using SegmentAnythingSharp;
 
 // sam model path
 string preModelPath = ".\\models\\sam_preprocess.onnx";
