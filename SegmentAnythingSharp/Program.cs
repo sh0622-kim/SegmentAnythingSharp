@@ -29,8 +29,8 @@ for (int i = 0; i < src.Rows; i++)
 {
     for (int j = 0; j < src.Cols; j++)
     {
-        var bFront = mask.At<byte>(i, j) > 0;
-        float factor = bFront ? 1.0f : 0.2f;
+        var front = mask.At<byte>(i, j) > 0;
+        float factor = front ? 1.0f : 0.2f;
         dst.Set(i, j, src.At<Vec3b>(i, j) * factor);
     }
 }
