@@ -52,8 +52,6 @@ namespace SegmentAnythingSharp
 
             var inputTensor = new DenseTensor<byte>(inputTensorValues, _inputShape.Select(d => d).ToArray());
 
-            string[] inputNamesPre = { "input" };
-
             var container = new List<NamedOnnxValue>
             {
                 NamedOnnxValue.CreateFromTensor("input", inputTensor)
